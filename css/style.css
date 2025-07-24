@@ -154,6 +154,12 @@ text-align: center;
     width: 100%;
     border: none;
     margin: 20px 0;
+    transition: 0.5s all;
+ }
+
+ .card-box button:hover{
+    background-color: white;
+    color: black;
  }
 
  /* flowers and love section */
@@ -324,6 +330,59 @@ height: 100%;
     color: black;
 }
 
+/* footer section */
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+}
+
+.footer-logo {
+    flex: 1;
+}
+
+.footer-logo img {
+    height: 70px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 17px;
+    color:gray;
+}
+
+.footer-list {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-list h5 {
+    margin: 10px 0;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color:gray;
+    padding-bottom: 10px;
+}
+
+.footer-icon {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-icon img {
+    width: 30px;
+    height: 30px;
+}
 
 
 
