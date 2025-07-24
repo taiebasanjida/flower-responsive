@@ -97,9 +97,56 @@ img{
 }
 
 .banner-text span{
-    color: orange;
+    color: orangered;
 }
 .banner-text p{
     color: gray;
     
 }
+
+/* plants section */
+
+
+ .plants-text h3,p{
+text-align: center;
+ 
+ }
+
+ .plants-text p{
+    padding-bottom: 30px;
+ }
+
+ .plants-text h3{
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+ }
+
+ .plants-text h3 span{
+    color: orangered;
+ }
+
+ .card-box img{
+    width:100%;
+    
+ }
+
+ .card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+ }
+
+ .card-box h4, p{
+    text-align: center;
+    margin: 10px 0;
+ }
+
+ .card-box button{
+    padding: 10px 30px;
+    background-color: orangered;
+    color: white;
+    width: 100%;
+    border: none;
+    margin: 20px 0;
+ }
