@@ -385,7 +385,7 @@ flex-direction: column;
 .email-section input{
     border: 1px solid white;
     padding: 10px 150px;
-    border-radius: 5px;
+    
 }
 
 .email-section button{
@@ -393,7 +393,6 @@ flex-direction: column;
     border: none;
     color: white;
     padding: 10px 30px;
-    border-radius: 5px;
     letter-spacing: 2px;
     transition: 0.5s all;
 }
@@ -463,15 +462,15 @@ flex-direction: column;
 
     .container {
     width: 100% !important;
-    padding: 0 15px;
-    margin: 0 15px;
+     padding: 0 15px; 
+    padding-right: 15px;
     
   }
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    padding-right: 15px;
   }
 
   .navbar-list ul li{
@@ -490,6 +489,7 @@ flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: auto;
   }
 
   .banner-text p {
@@ -503,26 +503,20 @@ flex-direction: column;
   .banner-img img {
     width: 80%; 
   }
-/* plants */
-
-  
-
-  .card {
+/* /* plants * */
+    .card {
     
     grid-template-columns: repeat(2,1fr) !important;
     gap: 10px;
     width: 100%;
   }
 
-  
-
   .card-box img {
-    width: 100%;
-    
-    
-  }
+    width: 100%
 
-/*  */
+     }
+
+/* flowers and love section */
 
   .flowers-plants {
     display: flex;
@@ -531,7 +525,7 @@ flex-direction: column;
     align-items: center;        
     gap: 20px;               
      padding: 20px 0;  
-     /* abr */
+     
   }
   .flowers-card,
   .flowers-unlist {
@@ -545,13 +539,13 @@ flex-direction: column;
     display: none !important;
   }
 
-  /*  */
+  /* latest deals */
 .latest-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 0 15px;
+    /* padding: 0 15px; */
   }
 
   .img-one,
@@ -590,13 +584,13 @@ flex-direction: column;
     width: 100%;
   }
 
-  /*  */
+  /* email section */
   
 
   .email-section {
         margin-top: 30px;
-        /* margin-left: 15px; */
-        /* margin-right: 15px; */
+    
+        
     }
 
     .email-section h2 {
@@ -640,7 +634,7 @@ flex-direction: column;
   .footer-section {
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 15px;
+    padding: 20px 0px;
 }
 
 .footer-list div {
