@@ -252,7 +252,22 @@ text-align: center;
     padding-bottom: 20px;
     
 }
-
+.img-two{
+    background-image: url(../images/deal-bloom.png);
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    /* object-fit: cover; */
+    width:400px;
+    height:200px;
+    /* width: 100%; */
+    margin-bottom:20px;
+    border-radius: 10px;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding-bottom: 20px;
+}
  
 
 .latest-big-img{
@@ -280,11 +295,28 @@ height: 100%;
     font-size: 40px;
     font-weight: 700px;
     color: white;
+    
+}
+
+.latest-big-img h5{
+    font-size: 30px;
+    font-weight: 500px;
+    color: white;
 }
 
 .latest-big-img span {
-    display: block;
+    display: inline-block;
     background-color: white;
+    width: 70px;
+    height: 2px;
+    
+}
+
+.latest-img-text{
+    justify-content: center;
+    
+    align-items: center;
+    margin-top: 70px 0;
 }
 
 /* email section */
@@ -384,5 +416,188 @@ height: 100%;
     height: 30px;
 }
 
+/* media query */
 
 
+@media (max-width: 576px) {
+
+    .container {
+    width: 100% !important;
+    padding: 0 15px;
+    margin: 0 15px;
+    
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .navbar-list ul li{
+    display: none;
+  }
+
+  .navbar-cart{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner-text p {
+    width: 100%; 
+  }
+
+  .banner-text h2 {
+    font-size: 28px; 
+  }
+
+  .banner-img img {
+    width: 80%; 
+  }
+/* plants */
+
+  
+
+  .card {
+    
+    grid-template-columns: repeat(2,1fr) !important;
+    gap: 10px;
+    width: 100%;
+  }
+
+  
+
+  .card-box img {
+    width: 100%;
+    
+    
+  }
+
+/*  */
+
+  .flowers-plants {
+    display: flex;
+    flex-direction: column;     
+    justify-content: center;    
+    align-items: center;        
+    gap: 20px;               
+     padding: 20px 0;  
+     /* abr */
+  }
+  .flowers-card,
+  .flowers-unlist {
+    width: 100%;                
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;         
+  }
+  .trusted-logo {
+    display: none !important;
+  }
+
+  /*  */
+.latest-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .img-one,
+  .img-two,
+  .latest-big-img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .img-one img,
+  .img-two img,
+  .latest-big-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .latest-text {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .latest-img-text {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .latest-small-img {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  /*  */
+  
+
+  .email-section {
+        margin-top: 30px;
+        /* margin-left: 15px; */
+        /* margin-right: 15px; */
+    }
+
+    .email-section h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+     .email-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px; 
+    width: 80%;
+    
+    
+  } 
+
+  .email-section input {
+    padding: 4px 8px;  
+    flex: 1;          
+    font-size: 14px;   
+    border-radius: 5px 0 0 5px;
+    width: 90%;
+    border-right: none;
+    
+    
+  }
+
+  .email-section button {
+    padding: 4px 6px; 
+    font-size: 14px;   
+    border-radius: 0 5px 5px 0;
+    border: none;
+    width: 40%;
+    
+    
+  }
+
+  /* footer section */
+
+  
+
+  
+}
