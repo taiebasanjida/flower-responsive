@@ -209,13 +209,14 @@ text-align: center;
     color: gray;
     font-size: 17px;
  }
+
 /* latest */
+
 .latest-text{
     text-align: center;
     padding: 40px 0;
 
 }
-
 .latest-text h2{
     color: black;
     font-size: 40px;
@@ -227,29 +228,40 @@ text-align: center;
     color: orangered;
 
 }
-
 .latest-box{
     display:grid;
     grid-template-columns: repeat(2,2fr);
     gap:10px;
-    height:auto;
     width: 100%;
 }
+
+.latest-big-img h3,
+.latest-big-img h5 {
+  text-align: center;
+  color: white;
+}
+
+
+
+
 .img-one{
     background-image: url(../images/deal-ana.png);
      background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: block;
-    /* object-fit: cover; */
-    width:400px;
     height:200px;
-    /* width: 100%; */
+    width: 100%; 
     margin-bottom:20px;
     border-radius: 10px;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.377);
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     
 }
 .img-two{
@@ -258,16 +270,38 @@ text-align: center;
     background-position: center;
     background-repeat: no-repeat;
     display: block;
-    /* object-fit: cover; */
-    width:400px;
     height:200px;
-    /* width: 100%; */
-    margin-bottom:20px;
+    width: 100%; 
     border-radius: 10px;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.377);
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
 }
+
+.img-one h3,.img-one h5{
+ color: white;
+}
+
+.img-one span,.img-two span{
+    display: inline-block;
+    background-color: white;
+    width: 70px;
+    height: 2px;
+    margin: 0;
+    
+    
+}
+
+.img-two h3, .img-two h5{
+    color: white;
+}
+
+
  
 
 .latest-big-img{
@@ -277,23 +311,25 @@ text-align: center;
     background-position: center;
     display: block;
     width:700px;
-    height:400px;
-    /* object-fit: cover; */
+    height:420px;
+    
     border-radius: 10px;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.438);
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
 } 
 
-.latest-small-img,
-.latest-big-img {
 
-height: 100%;
-} 
 
 .latest-big-img h3{
     text-align: center;
     font-size: 40px;
-    font-weight: 700px;
+    font-weight: 600px;
     color: white;
     
 }
@@ -302,6 +338,7 @@ height: 100%;
     font-size: 30px;
     font-weight: 500px;
     color: white;
+    text-align: center;
 }
 
 .latest-big-img span {
@@ -312,12 +349,15 @@ height: 100%;
     
 }
 
-.latest-img-text{
-    justify-content: center;
-    
-    align-items: center;
-    margin-top: 70px 0;
+.latest-img-text {
+display: flex;
+justify-content: center;
+ align-items: center;
+flex-direction: column; 
+  
 }
+
+
 
 /* email section */
 .email-section{
